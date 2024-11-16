@@ -41,3 +41,6 @@ alternatively you can use
 python app.py
 ```
 Open the app in your browser: ```http://127.0.0.1:5000/```
+
+### Demo Video
+[Click here](https://drive.google.com/file/d/1XsuEwC-55cpowqzKAvwy-B7xEUn1zS5E/view?usp=sharing) to view the demo video!
