@@ -9,7 +9,7 @@ Delete tasks.
 ### Project Setup 
 ##### Step 1: Clone the repository:
 ```
-git clone <repository-url>
+git clone https://github.com/SruthiKrish19/flask-task-app.git
 ```
 
 ##### Step 2: Create a virtual environment:
