@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Simple Task App</h1>
+<form action="/" method="post">
+  <input type="text" name="content">
+  <button type="submit">create</button>
+</form>
+<br></br>
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Status</th>
+    <th>Created At</th>
+    <th>Actions</th>
+  </tr>
+  {% for task in tasks %}
+  <tr>
+    <td>{{task.content}}</td>
+    <td>
+      {% if task.completed %}
+      Completed
+      {% else %}
+      Pending
+      {% endif %}
+    </td>
+    <td>{{ task.created_at.strftime('%d %b %Y, %I:%M %p') }}</td>
+    <td>
+      <a href="/update/{{task.id}}">Update</a>
+      <a href="/delete/{{task.id}}">Delete</a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
